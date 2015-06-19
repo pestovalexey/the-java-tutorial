@@ -18,7 +18,7 @@ public class ProxyTest {
 }
 
 class TraceHandler implements InvocationHandler {
-    
+
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
         System.out.println("bar(" + args[0] + ")");
